@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+
+}
+
+#rueda1, #rueda2,#rayo1, #rayo2{
+  animation: rodar 1s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+
+@keyframes rodar{
+    from{
+       transform: rotateZ(0deg);
+     
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
